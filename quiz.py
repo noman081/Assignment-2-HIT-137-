@@ -163,6 +163,7 @@ def restart_button(win):
         )
         restart_button.place(x=350,y=280)
 
+# Leaderboard function to show the score of all users 
 def leaderboard(win):
     win.destroy()
     leaderboard_win = Tk()
@@ -286,7 +287,7 @@ class My_Quiz:
             self.options[val]['text'] = opt  
             val += 1
 
-    # Checking answer after every questions
+    # Checking answer after every question
     def check_answer(self,q_number):
         if self.option_select.get() == answer[q_number]:
             self.right_answer +=1
