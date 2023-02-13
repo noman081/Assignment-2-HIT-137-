@@ -11,7 +11,7 @@ s.setworldcoordinates(-250, -250, 250, 250)
 game_on = True
 colors = ["red", "yellow", "orange", "blue", "white", "purple"] # color of turtles
 ypos = [-100, -60, -20, 20, 60, 100]    # for turtles positions
-turtles = []                            # list for creating turtle
+turtles = []                            
 ALIGN = "right"
 FONT = ("Courier", 14, "bold")
 
@@ -19,6 +19,7 @@ FONT = ("Courier", 14, "bold")
 f = Turtle()
 f.penup()
 f.color("White")
+f.pensize(6)
 f.goto(230,150)
 f.pendown()
 f.goto(230,-150)
@@ -40,7 +41,7 @@ for i in range(6):
     f.pendown()
     f.goto(240,y)
 f.ht()
-# Creating 6 Turtle Objects
+# Creating Turtle Objects
 for i in range(6):
     t = Turtle("turtle")
     t.color(colors[i])
